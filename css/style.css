@@ -1,0 +1,253 @@
+
+body{
+    color: #222;
+    background-color: #faf6ed;
+
+}
+
+a,
+li,
+ul,
+dd,
+dt,
+p,
+body{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-decoration: none;
+    color: #222;
+    
+}
+
+img{
+    display: block;
+    max-width: 100%;
+}
+
+.titulo{
+    font-size: 6rem;
+    grid-column: 1/-1;
+    font-weight: 400;
+    margin-left: 20px;
+}
+
+.sub-titulo{
+    font-family: "IMB Plex Mono", monospace;
+    font-size: 1rem;
+    letter-spacing: .1rem;
+    margin-bottom: 1rem;
+    color: #e54;
+    display: flex;
+    align-items: center;
+
+}
+
+/* Menu */
+
+.menu{
+    margin: 0 auto;
+    max-width: 1000px;
+    grid-column: 1/-1;
+    font-size: 1rem;
+    font-weight: 540;
+}
+
+.menu ul{
+    display: flex;
+    gap: 20px;
+    margin-left: 20px;
+    
+}
+
+.menu nav{
+    background-color: #FB5;
+     padding: 20px;
+}
+
+
+/* Main */
+
+.fotos-container{
+    width: 400px;
+    height: 500px;
+    overflow: auto;
+    margin-left: 100px;
+    margin-left: 20px;
+}
+
+.fotos{
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+
+}
+
+.fotos img{
+    width: 400px;
+    height: 500px;
+    margin-bottom: 10px;  
+}
+
+
+main{
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    margin-right: 20px;
+    margin: 0 auto;
+
+}
+
+.conteudo, 
+.faq dd{
+    margin-right: 25px;
+}
+
+.conteudo .sub-titulo::before{
+    content: "";
+    display: inline-block;
+    height: 6px;
+    width: 32px;
+    background-color:#FB5;
+    margin-right: 10px;
+}
+
+/* FAQ */ 
+
+.faq .sub-titulo::before{
+    content:"";
+    display: inline;
+    height: 6px;
+    width: 20px;
+    background-color: #FB5;
+    margin-right: 10px;
+}
+
+.faq{
+    max-width: 1000px;
+    text-align: start;
+    margin-right: 20px;
+    margin: 0 auto;
+}
+
+.faq dd{
+    margin-left: 30px;
+}
+
+.faq dd,
+.conteudo p,
+.faq dt,
+.footer p{
+    font-size: 1rem;
+    font-family:  Helvetica, sans-serif;
+    margin-bottom: 10px;
+
+}
+
+.faq dl{
+    margin-left: 100px;
+
+}
+
+
+/*  Contato*/
+
+.contato{
+    display: grid;
+    margin: 0 auto;
+    max-width: 1000px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contato img{
+    max-width: 100%;
+    width: 300px;
+    height: 400px;
+    margin-left: 120px;
+    
+}
+
+.contato li::before{
+    content:"";
+    display: inline-block;
+    height: 8px;
+    width: 20px;
+    background-color: #FB5;
+    margin-right: 10px;
+
+}
+
+
+
+.contato li{
+    margin-left: 60px;
+    margin-bottom: 1rem;
+}
+
+
+
+/* Footer */
+
+.footer{
+    margin: 0 auto;
+    margin-top: 100px;
+    max-width: 1000px;
+    padding: 20px;
+    background-color: #fb5;
+}
+
+/* Responsivo */
+
+
+@media(max-width: 700px){
+    .fotos-container{
+        width: 200px;
+        height: 300px;
+    }
+    .fotos img{
+        width: 200px;
+        height: 300px;  
+    }
+    .titulo{
+        font-size: 3rem;
+    }
+    .conteudo p, .faq dd{
+        font-size: 0.8rem;
+    }
+    .contato{
+        margin-top: 50px;
+
+    }
+    .contato ul{
+        margin-top: 20px;
+    }
+    .contato img{
+        margin-left: 20px;
+    }
+    
+    
+}
+
+@media(max-width: 550px){
+    .contato{
+        grid-template-columns: 1fr;
+    }
+    .contato ul{
+        margin-left: -50px;
+    }
+}
+
+@media(max-width: 350px){
+    .fotos-container{
+        width: 150px;
+        height: 250px;
+    }
+    .fotos img{
+        width: 150px;
+        height: 250px;  
+    }
+    
+}
+
