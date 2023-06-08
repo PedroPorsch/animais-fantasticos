@@ -13,9 +13,9 @@
     <header class="menu">
         <nav>
             <ul>
-                <li><a href="#animais">ANIMAIS</a></li>
-                <li><a href="#faq">FAQ</a></li>
-                <li><a href="#contato">CONTATO</a></li>
+                <li><a class="links" href="#animais">ANIMAIS</a></li>
+                <li><a class="links" href="#faq">FAQ</a></li>
+                <li><a class="links" href="#contato">CONTATO</a></li>
                 <li><a href="https://github.com/PedroPorsch">DEV</a></li>
             </ul>
         </nav>
@@ -122,5 +122,25 @@
             <p>Todos direitos reservados</p>
         </div>
     </footer>
+
+    <div class="modal-bg">
+        <div class="modal">
+            <button class="botao">X</button>
+            <form>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome">
+
+                <label for="cidade">Cidade:</label>
+                <input type="text" id="cidade">
+
+                <label for="email">email:</label>
+                <input type="text" id="email">
+
+                <button class="botao-enviar">ENVIAR</button>
+            </form>
+        </div>
+    </div>
+
+    <script type="module" src="./script/script.js" ></script>
 </body>
 </html>
