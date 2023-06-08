@@ -66,6 +66,7 @@ img{
 }
 
 
+
 /* Main */
 
 .fotos-container{
@@ -269,22 +270,30 @@ main{
 }
 
 .modal{
-    height: 400px;
-    width: 400px;
+    position: relative;
+    height: max-content;
+    width: max-content;
     border-radius: 8px;
     margin: 150px auto;
     background-color: white;
     text-align: start;
     padding-left: 20px;
+    padding: 30px;
+    border: 8px solid #FB5;
+    box-shadow: 0 0 0 8px #fff;
+
 }
 
-.botao{
-    float: right;
+.botao-fechar{
+    position: absolute;
     font-size: 1rem;
     background-color: #e54;
     border: 0px;
     border-radius: 2px;
-    color: white
+    color: white;
+    top: -16px;
+    right: -16px;
+    padding: 4px 8px;
 }
 
 .botao-enviar{
@@ -307,3 +316,4 @@ main{
     font-size: 1.5rem;
     margin-bottom: 20px;
 }
+
