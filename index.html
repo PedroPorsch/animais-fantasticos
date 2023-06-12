@@ -15,9 +15,17 @@
             <ul>
                 <li><a class="links" href="#animais">ANIMAIS</a></li>
                 <li><a class="links" href="#faq">FAQ</a></li>
-                <li><a class="links" href="#contato">CONTATO</a></li>
+                <li class="dropdown" data-dropdown >
+                    <a href="sobre.html">SOBRE</a>
+                    <ul class="dropdown-menu" id="menuDrop">
+                      <li><a href="empresa.html">A Empresa</a></li>
+                      <li><a href="equipe.html">Equipe</a></li>
+                      <li><a href="socios.html">Sócios</a></li>
+                      <li><a href="investidores.html">Investidores</a></li>
+                    </ul>
+                  </li> 
+               <li><a class="links" href="#contato">CONTATO</a></li>
                 <li><a href="" class="login">LOGIN</a></li>
-
             </ul>
         </nav>
     </header>
@@ -79,7 +87,6 @@
                 <p>As raposas são animais mamíferos e onívoros pertencentes à família Canidae. São vulpídeos de porte médio, caracterizados por um focinho comprido e uma cauda longa e peluda.</p>
             </section>
             
-            
         </div>
 
     </main>
@@ -105,7 +112,7 @@
     <section id="contato" class="contato">
         <h2 class="titulo">CONTATO</h2>
         <div>
-        <img src="/img/mapa.png" alt="Mapa endereço">
+        <img src="/img/mapa.png" alt="Mapa endereço" data-tooltip aria-label="Endereço próximo estacionamento">
 
         </div>
         <div>
@@ -140,6 +147,8 @@
             </form>
         </div>
     </section>
+
+
 
     <script type="module" src="./script/script.js" ></script>
 </body>
