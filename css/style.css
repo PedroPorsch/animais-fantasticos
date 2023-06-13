@@ -136,8 +136,18 @@ main{
     margin: 0 auto;
 }
 
+.faq dt{
+    cursor: pointer;
+
+}
+
 .faq dd{
     margin-left: 30px;
+    display: none;
+}
+
+.faq dd.active{
+    display: block;
 }
 
 .faq dd,
@@ -400,7 +410,7 @@ main{
     }
     .js[data-menu='button']::before{
         margin-right: 4px;
-        content: '';
+        content: ''; 
         display: inline-block;
         height: 2px;
         width: 12px;
