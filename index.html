@@ -11,7 +11,7 @@
 </head>
 <body>
     <header class="menu">
-        <nav>
+        <nav >
             <button data-menu="button" aria-expanded="false" aria-controls="menu" class="js">MENU</button>
             
             <ul class="js" data-menu="list" id="menu">
@@ -33,58 +33,64 @@
     </header>
 
    
-    <main>
-        <h1 id="animais" class="titulo">Animais Fantásticos</h1>
+    <main class="js-scroll">
+        <h1 id="animais" class="titulo ">Animais Fantásticos</h1>
         <div class="fotos-container">
             <div class="fotos">
-                <img src="/img/imagem1.jpg" width="600" height="500" alt="Raposa">
-                <img src="/img/imagem2.jpg" alt="Esquilo">
-                <img src="/img/imagem3.jpg" alt="Urso">
-                <img src="/img/imagem4.jpg" alt="Lobo">
-                <img src="/img/imagem5.jpg" alt="Macaco">
-                <img src="/img/imagem6.jpg" alt="Leão">
+                <img src="/img/imagem1.jpg" width="600" height="500" alt="Raposa" data-imagem="raposa">
+                <img src="/img/imagem2.jpg" alt="Esquilo" data-imagem="esquilo">
+                <img src="/img/imagem3.jpg" alt="Urso" data-imagem="urso">
+                <img src="/img/imagem4.jpg" alt="Lobo" data-imagem="lobo">
+                <img src="/img/imagem5.jpg" alt="Macaco" data-imagem="macaco">
+                <img src="/img/imagem6.jpg" alt="Leão" data-imagem="leao">
             </div>
         </div>   
 
         <div class="conteudo">
-            <section>
+            <section data-content="raposa" class="active">
                 <h2 class="sub-titulo">Raposa</h2>
                 <p class="texto">As raposas são animais mamíferos e onívoros pertencentes à família Canidae. São vulpídeos de porte médio, caracterizados por um focinho comprido e uma cauda longa e peluda.</p>
 
                 <p>As raposas são animais mamíferos e onívoros pertencentes à família Canidae. São vulpídeos de porte médio, caracterizados por um focinho comprido e uma cauda longa e peluda.</p>
-            </section>
-
-            <section>
-                <h2 class="sub-titulo">Raposa</h2>
-                <p>As raposas são animais mamíferos e onívoros pertencentes à família Canidae. São vulpídeos de porte médio, caracterizados por um focinho comprido e uma cauda longa e peluda.</p>
 
                 <p>As raposas são animais mamíferos e onívoros pertencentes à família Canidae. São vulpídeos de porte médio, caracterizados por um focinho comprido e uma cauda longa e peluda.</p>
             </section>
-            
-            <section>
-                <h2 class="sub-titulo">Raposa</h2>
+
+            <section data-content="esquilo">
+                <h2 class="sub-titulo">Esquilo</h2>
+                <p>As raposas são animais mamíferos e onívoros pertencentes à família Canidae. São vulpídeos de porte médio, caracterizados por um focinho comprido e uma cauda longa e peluda.</p>
+
                 <p>As raposas são animais mamíferos e onívoros pertencentes à família Canidae. São vulpídeos de porte médio, caracterizados por um focinho comprido e uma cauda longa e peluda.</p>
 
                 <p>As raposas são animais mamíferos e onívoros pertencentes à família Canidae. São vulpídeos de porte médio, caracterizados por um focinho comprido e uma cauda longa e peluda.</p>
             </section>
             
-            <section>
-                <h2 class="sub-titulo">Raposa</h2>
+            <section data-content="urso">
+                <h2 class="sub-titulo">Urso</h2>
                 <p>As raposas são animais mamíferos e onívoros pertencentes à família Canidae. São vulpídeos de porte médio, caracterizados por um focinho comprido e uma cauda longa e peluda.</p>
 
                 <p>As raposas são animais mamíferos e onívoros pertencentes à família Canidae. São vulpídeos de porte médio, caracterizados por um focinho comprido e uma cauda longa e peluda.</p>
             </section>
             
-            <section>
-                <h2 class="sub-titulo">Raposa</h2>
+            <section data-content="lobo">
+                <h2 class="sub-titulo">Lobo</h2>
                 <p>As raposas são animais mamíferos e onívoros pertencentes à família Canidae. São vulpídeos de porte médio, caracterizados por um focinho comprido e uma cauda longa e peluda.</p>
 
                 <p>As raposas são animais mamíferos e onívoros pertencentes à família Canidae. São vulpídeos de porte médio, caracterizados por um focinho comprido e uma cauda longa e peluda.</p>
             </section>
             
-            <section>
-                <h2 class="sub-titulo">Raposa</h2>
+            <section data-content="macaco">
+                <h2 class="sub-titulo">Macaco</h2>
                 <p>As raposas são animais mamíferos e onívoros pertencentes à família Canidae. São vulpídeos de porte médio, caracterizados por um focinho comprido e uma cauda longa e peluda.</p>
+
+                <p>As raposas são animais mamíferos e onívoros pertencentes à família Canidae. São vulpídeos de porte médio, caracterizados por um focinho comprido e uma cauda longa e peluda.</p>
+
+                <p>As raposas são animais mamíferos e onívoros pertencentes à família Canidae. São vulpídeos de porte médio, caracterizados por um focinho comprido e uma cauda longa e peluda.</p>
+            </section>
+            
+            <section data-content="leao">
+                <h2 class="sub-titulo">Leão</h2>
+                <p>As raposas são animais mamíferos e onívoros pertencentes à família Canidae. São vulpídeos de porte médio</p>
 
                 <p>As raposas são animais mamíferos e onívoros pertencentes à família Canidae. São vulpídeos de porte médio, caracterizados por um focinho comprido e uma cauda longa e peluda.</p>
             </section>
@@ -94,7 +100,7 @@
     </main>
      
 
-    <article id="faq" class="faq">
+    <article  id="faq" class="faq js-scroll">
         <h2 class="titulo">FAQ</h2>
         <dl>
             <dt class="sub-titulo">Qual a idade dos animais?</dt>
@@ -111,7 +117,7 @@
         </dl>
     </article>
        
-    <section id="contato" class="contato">
+    <section id="contato" class="contato js-scroll">
         <h2 class="titulo">CONTATO</h2>
         <div>
         <img src="/img/mapa.png" alt="Mapa endereço" data-tooltip aria-label="Endereço próximo estacionamento">
