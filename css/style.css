@@ -193,7 +193,35 @@ main{
 
 }
 
+/* Numeros */
 
+.numeros{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.numeros{
+    margin: 0 auto;
+}
+
+.numeros-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    gap: 30px;
+}
+
+.numeros-grid h3{
+    font-size: 2rem;
+    font-family: 'Playfair Display';
+}
+
+.numeros-grid span{
+    font-family: 'IBM Plex Mono', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #e54;
+}
 
 
 /*  Contato*/

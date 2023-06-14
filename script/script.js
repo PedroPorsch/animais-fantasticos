@@ -6,8 +6,8 @@ import menuMobile from './menuMobile.js'
 import accordionList from './accordionList.js';
 import animacaoScroll from './animacaoScroll.js';
 import tabNav from './tabNav.js';
-
-
+import fetchBtc from './fetch-btc.js';
+import animaNumeros from './anima-numeros.js'
 
 scrollSuave();
 modal();
@@ -17,3 +17,5 @@ menuMobile();
 accordionList();
 animacaoScroll();
 tabNav();
+fetchBtc();
+animaNumeros();

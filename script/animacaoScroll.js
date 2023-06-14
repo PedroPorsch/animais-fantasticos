@@ -11,7 +11,7 @@ export default function animacaoScroll(){
                     const metade = window.innerHeight * 0.6;
                     if(areaTop < metade){
                         area.classList.add('active');
-                    }else{
+                    }else if(area.classList.contains('ativo')){
                         area.classList.remove('active');
                     }
                 })
